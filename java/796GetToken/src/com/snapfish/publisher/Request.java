@@ -175,7 +175,7 @@ public class Request {
         addParameter("appid", appid);
         addParameter("apikey", apikey);
         addParameter("secretkey", secretkey);
-        addParameter("timestamp", "1414142919");//""+(System.currentTimeMillis()/1000));//"1414142919");//
+        addParameter("timestamp", ""+(System.currentTimeMillis()/1000));//"1414142919");//
 
         boolean first = true;
         StringBuffer param = new StringBuffer();

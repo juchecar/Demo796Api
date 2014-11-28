@@ -12,10 +12,11 @@ import httplib
 import json
 
 def get_796_token(appid,apikey,secretkey):
-    timestamp = time.time() #"1414142919" #time.time()
+    timestamp = time.time()#"1414142919" #time.time()
     params = {"apikey": apikey, "appid": appid, "secretkey": secretkey, "timestamp": str(timestamp)}
     params = sorted(params.iteritems(), key=lambda d: d[0], reverse=False)
     message = urllib.urlencode(params)
+    print "secretkey=",secretkey
     print "message=",message
     s = hmac.new(secretkey, message, digestmod=hashlib.sha1).hexdigest()
     print "hex=",s
