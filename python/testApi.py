@@ -54,6 +54,7 @@ if __name__ == "__main__":
     access_token = get_796_token(appid = '##YOUR APPID##',apikey='##YOUR APIKEY##',secretkey='##YOUR SECRETKEY##')
     print "access_token=",access_token
 
+
     getUserInfo(access_token)
     getUserInfo1(access_token)
     getUserInfo2(access_token)
